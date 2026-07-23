@@ -1,64 +1,99 @@
+
 @font-face {
-  font-family: customfontverycool;
-  src: url("http://blxm.vercel.app/assets/talina-demo/Talina%20DEMO.otf");
+  font-family: 'customfontverycool';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v37/6xKtdSZaM9iE8KbpRA_hK1QN.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @keyframes gradualFadeIn {
   0% {
-    transform:translate3d(0,-1.5rem,0);
+    transform: translate3d(0, -1.5rem, 0);
     opacity: 0;
   }
   100% {
     opacity: 1;
-    transform:translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
   }
 }
-@keyframes boxShadow-ICHOSEYOU{
-    0%{
-        box-shadow: 0rem 0rem 1px 0rem #8da9c4;
-    }
-    100%{
-
-box-shadow: -0.5rem 0.5rem 1px 0rem #8da9c4;
-    }
+@keyframes boxShadow-ICHOSEYOU {
+  0% {
+    box-shadow: 0rem 0rem 1px 0rem #8da9c4;
+  }
+  100% {
+    box-shadow: -0.5rem 0.5rem 1px 0rem #8da9c4;
+  }
 }
 body {
   font-family: customfontverycool !important;
-  background-color: #eef4ed;
+  background-color: #e1ebf2;
   user-select: none;
   text-align: center;
   padding: 2rem;
-  padding-left:4rem;
-  padding-right:4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
   animation: gradualFadeIn 0.8s ease;
 }
 button {
-  font-weight: lighter;
+  font-weight: bold;
   font-family: customfontverycool;
   cursor: pointer;
 
-  border-radius: 0;
   border: none;
   background-color: #134074;
   color: white;
   padding: 0.2rem;
   min-width: 10rem;
-border-radius:1rem;
+  border-radius: 1rem;
   height: 4rem;
 
   font-size: 2rem;
   box-shadow: -0.5rem 0.5rem 1px 0rem #8da9c4;
-    animation:boxShadow-ICHOSEYOU 0.3s ease;
+  animation: boxShadow-ICHOSEYOU 0.3s ease;
   transition:
     box-shadow 0.1s,
     background-color 0.1s,
     transform 0.1s;
-    margin:1rem;
+  margin: 1rem;
 }
 button:hover {
   background-color: #0c2b4f;
 }
 button:active {
- box-shadow: 0rem 0rem 1px 0rem #8da9c4;
+  box-shadow: 0rem 0rem 1px 0rem #8da9c4;
+  background-color: #134074;
+  box-shadow: none;
+  transform: translate3d(-0.5rem, 0.5rem, 0);
+}
+button.small{
+  font-weight: bold;
+  font-family: customfontverycool;
+  cursor: pointer;
+
+  margin:-0.5rem;
+  border: none;
+  background-color: #134074;
+  color: white;
+  padding: 0.2rem;
+  min-width: 7rem;
+  border-radius: 1rem;
+  height: 3rem;
+
+  font-size: 1.6rem;
+  box-shadow: -0.35rem 0.35rem 1px 0rem #8da9c4;
+  animation: boxShadow-ICHOSEYOU 0.3s ease;
+  transition:
+    box-shadow 0.1s,
+    background-color 0.1s,
+    transform 0.1s;
+  margin: 1rem;
+}
+button.small:hover.small {
+  background-color: #0c2b4f;
+}
+button.small:active {
+  box-shadow: 0rem 0rem 1px 0rem #8da9c4;
   background-color: #134074;
   box-shadow: none;
   transform: translate3d(-0.5rem, 0.5rem, 0);
@@ -66,12 +101,33 @@ button:active {
 h1 {
   font-size: 3rem;
 }
-img{
-    box-shadow:0.5rem 0.5rem 2rem rgba(97, 97, 97, 0.442);
-    background-color:#8CA7C2;
-    padding:1.2rem;
-    border-radius:1rem;
-     animation: gradualFadeIn 1.8s ease;
-   
-    will-change:transform;
+img {
+  box-shadow: 0.5rem 0.5rem 2rem rgba(97, 97, 97, 0.442);
+  background-color: #8ca7c2;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  animation: gradualFadeIn 1.8s ease;
+
+  will-change: transform;
+}
+.card {
+  width: 15rem;
+  background-color: #bfcddf;
+  color: #021223;
+  border-radius: 1rem;
+  max-width: 20rem;
+  padding:0.5rem;
+  height:15rem;
+  margin:1rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(97, 97, 97, 0.442);
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(97, 97, 97, 0.442);
+}
+
+.row {
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
 }
