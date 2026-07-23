@@ -42,7 +42,7 @@ button {
   color: white;
   padding: 0.2rem;
   min-width: 10rem;
-
+border-radius:1rem;
   height: 4rem;
 
   font-size: 2rem;
@@ -57,11 +57,20 @@ button:hover {
   background-color: #0c2b4f;
 }
 button:active {
-  box-shadow: none;
+ box-shadow: 0rem 0rem 1px 0rem #8da9c4;
   background-color: #134074;
   box-shadow: none;
   transform: translate3d(-0.5rem, 0.5rem, 0);
 }
 h1 {
   font-size: 3rem;
+}
+img{
+    
+    background-color:#8CA7C2;
+    padding:1.2rem;
+    border-radius:1rem;
+     animation: gradualFadeIn 1.8s ease;
+   
+    will-change:transform;
 }
