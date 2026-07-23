@@ -1,0 +1,39 @@
+@font-face {
+  font-family: customfontverycool;
+  src: url("http://blxm.vercel.app/assets/talina-demo/Talina%20DEMO.otf");
+}
+body {
+  font-family: customfontverycool !important;
+}
+button {
+  font-family: customfontverycool;
+  cursor: pointer;
+ 
+  border-radius: 0;
+  border:none;
+  background-color:#134074;
+  color:white;
+  padding: 0.2rem;
+  min-width:10rem;
+  
+  height:4rem;
+  
+  font-size: 2rem;
+   box-shadow: -0.5rem 0.5rem 1px 0rem #8DA9C4;
+
+   transition: box-shadow 0.2s,  background-color 0.2s, transform 0.2s;
+   
+}
+button:hover{
+    background-color:#0c2b4f;
+   
+   
+}
+button:active{
+     box-shadow: none;
+      background-color:#134074;
+    box-shadow:none;
+     transform: translate3d(
+       -0.5rem, 0.5rem, 0
+    );
+}
