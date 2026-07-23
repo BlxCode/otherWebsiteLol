@@ -2,38 +2,66 @@
   font-family: customfontverycool;
   src: url("http://blxm.vercel.app/assets/talina-demo/Talina%20DEMO.otf");
 }
+@keyframes gradualFadeIn {
+  0% {
+    transform:translate3d(0,-1.5rem,0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform:translate3d(0,0,0);
+  }
+}
+@keyframes boxShadow-ICHOSEYOU{
+    0%{
+        box-shadow: 0rem 0rem 1px 0rem #8da9c4;
+    }
+    100%{
+
+box-shadow: -0.5rem 0.5rem 1px 0rem #8da9c4;
+    }
+}
 body {
   font-family: customfontverycool !important;
+  background-color: #eef4ed;
+  user-select: none;
+  text-align: center;
+  padding: 2rem;
+  padding-left:4rem;
+  padding-right:4rem;
+  animation: gradualFadeIn 0.8s ease;
 }
 button {
+  font-weight: lighter;
   font-family: customfontverycool;
   cursor: pointer;
- 
-  border-radius: 0;
-  border:none;
-  background-color:#134074;
-  color:white;
-  padding: 0.2rem;
-  min-width:10rem;
-  
-  height:4rem;
-  
-  font-size: 2rem;
-   box-shadow: -0.5rem 0.5rem 1px 0rem #8DA9C4;
 
-   transition: box-shadow 0.2s,  background-color 0.2s, transform 0.2s;
-   
+  border-radius: 0;
+  border: none;
+  background-color: #134074;
+  color: white;
+  padding: 0.2rem;
+  min-width: 10rem;
+
+  height: 4rem;
+
+  font-size: 2rem;
+  box-shadow: -0.5rem 0.5rem 1px 0rem #8da9c4;
+    animation:boxShadow-ICHOSEYOU 0.3s ease;
+  transition:
+    box-shadow 0.1s,
+    background-color 0.1s,
+    transform 0.1s;
 }
-button:hover{
-    background-color:#0c2b4f;
-   
-   
+button:hover {
+  background-color: #0c2b4f;
 }
-button:active{
-     box-shadow: none;
-      background-color:#134074;
-    box-shadow:none;
-     transform: translate3d(
-       -0.5rem, 0.5rem, 0
-    );
+button:active {
+  box-shadow: none;
+  background-color: #134074;
+  box-shadow: none;
+  transform: translate3d(-0.5rem, 0.5rem, 0);
+}
+h1 {
+  font-size: 3rem;
 }
