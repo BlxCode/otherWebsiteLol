@@ -1,6 +1,12 @@
 # My Alternative Website
 ## What is it?
 This is my other website. My official website https://blxm.vercel.app/ is a bit of a mess, and this one is way more simpler, and also open source :D
+
+It has 4 sections.
+* About me
+* My Tech Stack
+* Current Projects
+* Ways to contact me
 ## Why is it?
 I created this website because I wanted a free domain and 10 extra stardust.
 ## How is it?
