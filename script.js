@@ -5,6 +5,21 @@ let rotateY = 0;
 const centerX = img.width / 2;
 const centerY = img.height / 2;
 let status = false;
+if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  img.style.width="95%";
+  img.style.height="auto";
+  img.style.marginLeft="auto";
+  img.style.marginRight="auto";
+}else if((/iPad/i.test(navigator.userAgent))){
+ img.style.width="65%";
+  img.style.height="auto";
+  img.style.marginLeft="auto";
+  img.style.marginRight="auto";
+
+
+}else{
+ 
+
 img.addEventListener("mousemove", (e) => {
   status = true;
   const x = e.clientX - imgCoords.left;
@@ -53,3 +68,4 @@ img.addEventListener("mouseleave", () => {
     }
   }, 10);
 });
+}
