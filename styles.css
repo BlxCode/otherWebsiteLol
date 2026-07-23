@@ -52,6 +52,7 @@ border-radius:1rem;
     box-shadow 0.1s,
     background-color 0.1s,
     transform 0.1s;
+    margin:1rem;
 }
 button:hover {
   background-color: #0c2b4f;
@@ -66,7 +67,7 @@ h1 {
   font-size: 3rem;
 }
 img{
-    
+    box-shadow:0.5rem 0.5rem 2rem rgba(97, 97, 97, 0.442);
     background-color:#8CA7C2;
     padding:1.2rem;
     border-radius:1rem;
